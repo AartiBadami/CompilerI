@@ -1,7 +1,7 @@
 This interpreter consumes simple arithmetic statements (see below for specific LL(1) grammar rules) and parses, tokenizes, and executes the statements line-by-line.  This means there are compile-time errors and all errors are caught at runtime.  The parser is implemented with recursive descent. (see repository for demo link)
 
 --Grammar Rules--
-<Program>   ::= <StmtList>.
+< Program >   ::= <StmtList>.
 <StmtList>  ::= <Stmt> <NextStmt>
 <NextStmt>  ::= ;<StmtList> | e
 <Stmt>      ::= <Assign> | <Print>
